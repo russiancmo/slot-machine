@@ -1,0 +1,72 @@
+@import "../../styles/modules/colors.scss";
+
+.button {
+  display: flex;
+  max-width: fit-content;
+  max-width: fit-content;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  background-color: $green;
+  color: $white;
+  font-size: 16px;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: all;
+  transition-duration: 1s;
+  border: 0;
+
+  &:disabled,
+  [disabled] {
+    background-color: $middleGrey;
+    cursor: not-allowed;
+    box-shadow: none;
+
+    &:hover {
+      box-shadow: none;
+    }
+  }
+
+  &:hover {
+    box-shadow: rgb(50 50 93 / 20%) 0px 11px 63px 0px,
+      rgb(0 0 0 / 26%) 0px 30px 60px -29px;
+  }
+
+  &__icon {
+    margin-right: 10px;
+    line-height: 0;
+
+    &_onlyicon_true {
+      margin: 0;
+      line-height: 0;
+
+      & path {
+        stroke-opacity: 1;
+        fill-opacity: 1;
+      }
+    }
+  }
+
+  &__title {
+    width: max-content;
+  }
+
+  &_onlyicon_true {
+    width: 40px;
+    max-width: inherit;
+    height: 40px;
+    display: flex;
+    padding: 0;
+    border-radius: 50%;
+    background-color: $lightGrey;
+
+    &__icon {
+      margin: 0;
+    }
+  }
+
+  &_width_full-width {
+    width: 100%;
+    max-width: 100%;
+  }
+}
