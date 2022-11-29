@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --mode development",
-    "build": "webpack"
+    "build": "webpack --mode production"
   },
   "author": "Loboda Igor",
   "email": "russiancmo@gmail.com",
@@ -19,7 +19,10 @@
     "@types/react-dom": "18.0.9",
     "babel-loader": "8.0.2",
     "css-loader": "6.7.2",
+    "css-modules-typescript-loader": "4.0.1",
     "html-webpack-plugin": "5.5.0",
+    "sass": "1.56.1",
+    "sass-loader": "13.2.0",
     "style-loader": "3.3.1",
     "ts-loader": "9.4.1",
     "typescript": "4.9.3",
@@ -28,6 +31,9 @@
     "webpack-dev-server": "4.11.1"
   },
   "dependencies": {
+    "@inlet/react-pixi": "6.8.0",
+    "classnames": "2.3.2",
+    "mobx": "6.7.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   }
