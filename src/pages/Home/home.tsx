@@ -1,6 +1,6 @@
 import React from "react";
-import { SlotMachine } from "../../components/SlotMachine/slot-machine";
+import { SlotMachineView } from "../../components/SlotMachine/slot-machine";
 
 export const Home = () => {
-  return <SlotMachine />;
+  return <SlotMachineView />;
 };
