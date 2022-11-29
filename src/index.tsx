@@ -1,14 +1,11 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { useTest } from "./hook/useTest";
+import "./styles/index.scss";
 import "./index.css";
+import { Home } from "./pages/Home/home";
 
 const App = () => {
-  const { isTrue } = useTest();
-
-  const yesOrNo = isTrue ? "YES" : "NO";
-
-  return <div>{yesOrNo}</div>;
+  return <Home />;
 };
 
 const root = createRoot(document.getElementById("root"));
