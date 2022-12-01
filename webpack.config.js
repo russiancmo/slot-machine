@@ -45,8 +45,12 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|jpe?g|gif|jp2|webp)$/,
-        type: "asset/resource",
+        test: /\.(png|jpe?g|gif)$/i,
+        loader: "file-loader",
+        options: {
+          publicPath: "assets",
+          outputPath: "assets",
+        },
       },
     ],
   },
@@ -59,6 +63,15 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/index.html",
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: "./src/assets",
+          to: "./assets",
+          toType: "dir",
+        },
+      ],
     }),
   ],
   optimization: {
