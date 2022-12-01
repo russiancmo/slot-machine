@@ -7,7 +7,7 @@ import Crocodile from "./static/crocodile.png";
 import Turtle from "./static/turtle.png";
 import Sheep from "./static/sheep.png";
 import Hippo from "./static/hippo.png";
-import Lion from "./static/Lion.png";
+import Lion from "./static/lion.png";
 import Panther from "./static/panther.png";
 import Bird from "./static/bird.png";
 import { tweening } from "./functions/tweening";
