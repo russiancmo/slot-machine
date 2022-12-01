@@ -46,10 +46,7 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif|jp2|webp)$/,
-        loader: "file-loader",
-        options: {
-          name: "[name].[ext]",
-        },
+        type: "asset/resource",
       },
     ],
   },
@@ -63,13 +60,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/index.html",
     }),
-    new CopyWebpackPlugin({
-      patterns: [{
-          from: './src/assets',
-              to: './assets',
-          toType: 'dir'
-      }]
-  }),
   ],
   optimization: {
     runtimeChunk: "single",
