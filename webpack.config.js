@@ -34,7 +34,17 @@ module.exports = {
           "style-loader",
           "css-loader",
           "sass-loader",
-          "css-modules-typescript-loader",
+        ],
+      },
+      {
+        test: /\.module.css$/,
+        use: [
+          { 
+            loader: "css-loader",
+            options: {
+              modules: true,
+            },
+          },
         ],
       },
       {

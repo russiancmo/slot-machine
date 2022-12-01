@@ -1,0 +1,11 @@
+@import "../../../../styles/modules/colors.scss";
+
+.balance {
+  font-size: 22px;
+
+  &__count {
+    font-size: 22px;
+    font-weight: 700;
+    color: $primary;
+  }
+}

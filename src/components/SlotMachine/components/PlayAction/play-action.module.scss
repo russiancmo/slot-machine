@@ -1,0 +1,15 @@
+.button {
+  font-size: 28px;
+  padding: 10px 45px !important;
+  box-shadow: rgb(240 46 170 / 40%) 0px 5px, rgb(240 46 170 / 30%) 0px 10px,
+    rgb(240 46 170 / 20%) 0px 15px, rgb(240 46 170 / 10%) 0px 20px,
+    rgb(240 46 170 / 5%) 0px 25px;
+  transition: all;
+  transition-duration: 0.5s;
+
+  &:hover {
+    box-shadow: rgb(240 46 170 / 40%) 0px -5px, rgb(240 46 170 / 30%) 0px -10px,
+      rgb(240 46 170 / 20%) 0px -15px, rgb(240 46 170 / 10%) 0px -20px,
+      rgb(240 46 170 / 5%) 0px -25px;
+  }
+}

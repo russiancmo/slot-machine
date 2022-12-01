@@ -1,0 +1,25 @@
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.balance {
+    width: fit-content;
+    margin-left: auto;
+    margin-bottom: 30px;
+}
+
+.actions {
+    position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.play-button {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}

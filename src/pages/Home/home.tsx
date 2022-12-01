@@ -1,6 +1,11 @@
 import React from "react";
-import { SlotMachineView } from "../../components/SlotMachine/slot-machine";
+import { SlotMachine } from "../../components/SlotMachine/slot-machine";
+import styles from "./home.module.scss";
 
 export const Home = () => {
-  return <SlotMachineView />;
+  return (
+    <div className={styles.container}>
+      <SlotMachine />
+    </div>
+  );
 };
