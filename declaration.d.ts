@@ -1,3 +1,7 @@
-declare module '*.scss'; 
-declare module '*.png';
-declare module '*.jpg';
+declare module "*.scss";
+declare module "*.png" {
+  const value: any;
+  export = value;
+}
+
+declare module "*.jpg";
